@@ -1,151 +1,151 @@
-# README.md
+<h1 align="center">🚦 Real-Time Vision-Based Road Sign Detection and GPS-Enabled Safety Alert System using YOLO</h1>
 
-````markdown
-# 🚦 Real-Time Vision-Based Road Sign Detection and GPS-Enabled Safety Alert System using YOLO
-
-An AI-powered intelligent transportation safety system that performs **real-time road sign detection**, **GPS tracking**, and **driver safety alerts** using **YOLO (You Only Look Once)** and Flask-based web technologies.
-
----
-
-## 📌 Project Overview
-
-This project is designed to improve road safety by detecting traffic signs in real time using computer vision and providing GPS-based safety alerts.
-
-The system:
-- Detects road signs using YOLO
-- Tracks live GPS coordinates
-- Displays route and map visualization
-- Sends zone-based alerts
-- Provides a web dashboard using Flask
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/YOLO-AI-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge&logo=flask">
+  <img src="https://img.shields.io/badge/OpenCV-Computer_Vision-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/GPS-Live_Tracking-orange?style=for-the-badge">
+</p>
 
 ---
 
-## 🚀 Features
+## 📌 Project Description
 
-✅ Real-time road sign detection  
-✅ YOLO-based object detection  
-✅ Live GPS coordinate tracking  
-✅ Interactive map visualization  
-✅ Speed and zone alert system  
-✅ Flask web application  
-✅ JSON route history support  
-✅ Safety notification system  
+An advanced AI-powered intelligent transportation safety system that performs:
 
----
+✅ Real-time traffic sign detection  
+✅ GPS-based live vehicle tracking  
+✅ Zone-based safety alerts  
+✅ Interactive web dashboard  
+✅ Real-time route monitoring  
 
-## 🛠️ Technologies Used
-
-### Programming Language
-- Python
-
-### AI / Machine Learning
-- YOLO
-- OpenCV
-
-### Web Technologies
-- HTML
-- CSS
-- JavaScript
-- Flask
-
-### Other Tools
-- GPS Integration
-- JSON
-- Ngrok
+using **YOLO**, **OpenCV**, **Flask**, and **GPS integration**.
 
 ---
 
-## 📂 Project Structure
+# 🎯 Objectives
+
+- Improve road safety using AI
+- Detect traffic signs instantly
+- Monitor vehicle movement using GPS
+- Generate real-time safety alerts
+- Provide live dashboard visualization
+
+---
+
+# 🧠 AI Model Used
+
+| Model | Purpose |
+|------|------|
+| YOLO | Traffic Sign Detection |
+| OpenCV | Video Frame Processing |
+| Flask | Web Server |
+| GPS Module | Location Tracking |
+
+---
+
+# 🛠️ Tech Stack
+
+<div align="center">
+
+| Technology | Usage |
+|------------|-------|
+| Python | Backend |
+| Flask | Web Framework |
+| YOLO | Object Detection |
+| OpenCV | Computer Vision |
+| HTML/CSS/JS | Frontend |
+| JSON | Route Storage |
+| Ngrok | Public Hosting |
+
+</div>
+
+---
+
+# 🖥️ System Architecture
+
+```text
+Camera Input
+      ↓
+YOLO Detection Model
+      ↓
+Traffic Sign Detection
+      ↓
+GPS Coordinate Processing
+      ↓
+Flask Server
+      ↓
+Web Dashboard + Alerts
+```
+
+---
+
+# 📸 Output Screenshots
+
+## 🔹 Live Detection
+(Add screenshot here)
+
+## 🔹 GPS Dashboard
+(Add screenshot here)
+
+## 🔹 Map Visualization
+(Add screenshot here)
+
+---
+
+# 🚀 Key Features
+
+✨ Real-time object detection  
+✨ GPS-enabled tracking  
+✨ Route history visualization  
+✨ Safety zone monitoring  
+✨ Speed monitoring system  
+✨ Flask-based dashboard  
+✨ Interactive map support  
+✨ AI-powered transportation system  
+
+---
+
+# 📂 Folder Structure
 
 ```bash
-├── gps_project/
-├── sign_Board/
-│   ├── best.pt
-│   └── detect.py
-├── static/
-│   ├── app.js
-│   ├── map.html
-│   └── style.css
-├── templates/
-│   ├── gps.html
-│   └── index.html
-├── detect_web.py
-├── gps_server.py
-├── start_ngrok.py
-├── zone_alert.py
-├── route.json
-└── README.md
-````
+gps_project/
+sign_Board/
+static/
+templates/
+detect_web.py
+gps_server.py
+zone_alert.py
+route.json
+README.md
+```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/andrewakash/Real-Time-Vision-Based-Road-Sign-Detection-and-GPS-Enabled-Safety-Alert-System-Using-YOLO.git
 ```
 
-### 2️⃣ Navigate to Project Folder
-
-```bash
-cd Real-Time-Vision-Based-Road-Sign-Detection-and-GPS-Enabled-Safety-Alert-System-Using-YOLO
-```
-
-### 3️⃣ Create Virtual Environment
-
-```bash
-python -m venv .venv
-```
-
-### 4️⃣ Activate Environment
-
-#### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-#### Linux / Mac
-
-```bash
-source .venv/bin/activate
-```
-
-### 5️⃣ Install Dependencies
+## Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## ▶️ Run the Project
-
-### Start Flask Server
+## Run Project
 
 ```bash
 python gps_server.py
 ```
 
-### Start YOLO Detection
-
-```bash
-python detect_web.py
-```
-
-### Start Ngrok (Optional)
-
-```bash
-python start_ngrok.py
-```
-
 ---
 
-## 🌐 Web Dashboard
-
-After running the server:
+# 🌐 Web Interface
 
 ```bash
 http://127.0.0.1:5000
@@ -153,72 +153,35 @@ http://127.0.0.1:5000
 
 ---
 
-## 🧠 How It Works
+# 🔮 Future Enhancements
 
-1. Camera captures live road video
-2. YOLO detects traffic signs
-3. GPS module sends coordinates
-4. Flask server processes data
-5. Web dashboard displays:
-
-   * Live map
-   * Speed
-   * Alerts
-   * Route tracking
+- Android mobile integration
+- Voice alert assistant
+- Cloud database
+- Emergency SOS system
+- AI accident prediction
+- Real-time analytics
 
 ---
 
-## 📸 System Modules
+# 👨‍💻 Developer
 
-### 🔹 Road Sign Detection
-
-Detects:
-
-* Speed limits
-* Stop signs
-* Warning signs
-* Traffic instructions
-
-### 🔹 GPS Tracking
-
-Tracks:
-
-* Latitude
-* Longitude
-* Route history
-
-### 🔹 Safety Alert System
-
-Generates alerts for:
-
-* Restricted zones
-* Overspeed conditions
-* Dangerous areas
+## Akash S
+🎓 CSE Student  
+🏫 SRM TRP Engineering College
 
 ---
 
-## 📈 Future Enhancements
+# ⭐ Support
 
-* Mobile application integration
-* Voice alert system
-* Cloud database support
-* Real-time analytics dashboard
-* Emergency notification system
+If you like this project:
 
----
-
-## 👨‍💻 Author
-
-### Akash S
-
-Computer Science and Engineering
+🌟 Star the repository  
+🍴 Fork the project  
+📢 Share with others  
 
 ---
 
-## 📜 License
+# 📜 License
 
-This project is developed for educational and research purposes.
-
-
-
-
+This project is developed for academic and educational purposes.
