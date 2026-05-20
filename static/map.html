@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a5feb911494ec33498f352369f523a25 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a5feb911494ec33498f352369f523a25" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a5feb911494ec33498f352369f523a25 = L.map(
+                "map_a5feb911494ec33498f352369f523a25",
+                {
+                    center: [11.5183, 79.3256],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_34e5a9455ead4489736727d91423ce68 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_34e5a9455ead4489736727d91423ce68.addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var marker_c531fe4972ca64ce6fc1e0a6c3b9b9a5 = L.marker(
+                [11.5183, 79.3256],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_cf3b350dd199d4274335ed488b7e24a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28737617981aa463af4e507971cf67d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b97b93533ddbf6677c3611ca11eee0b1 = $(`<div id="html_b97b93533ddbf6677c3611ca11eee0b1" style="width: 100.0%; height: 100.0%;">🚗 Vehicle Location</div>`)[0];
+                popup_28737617981aa463af4e507971cf67d5.setContent(html_b97b93533ddbf6677c3611ca11eee0b1);
+            
+        
+
+        marker_c531fe4972ca64ce6fc1e0a6c3b9b9a5.bindPopup(popup_28737617981aa463af4e507971cf67d5)
+        ;
+
+        
+    
+    
+                marker_c531fe4972ca64ce6fc1e0a6c3b9b9a5.setIcon(icon_cf3b350dd199d4274335ed488b7e24a3);
+            
+    
+            var marker_9a5fce5778a130120e8e0c2aaf47718f = L.marker(
+                [11.5183, 79.3256],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_5f5368b6852d4154e666df7777505bc2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a98dd223bab08e37450e3674453feb65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac2c184cde2baa48cfd8d4f5e3cef38a = $(`<div id="html_ac2c184cde2baa48cfd8d4f5e3cef38a" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>HOSPITAL → Deivam Hospital<br>CLINIC → Srinithi Nursing Home<br>CLINIC → Chandra Nursing Home<br>CLINIC → Senthil Nursing Home<br>HOSPITAL → Government Hospital, Virudhachalam</div>`)[0];
+                popup_a98dd223bab08e37450e3674453feb65.setContent(html_ac2c184cde2baa48cfd8d4f5e3cef38a);
+            
+        
+
+        marker_9a5fce5778a130120e8e0c2aaf47718f.bindPopup(popup_a98dd223bab08e37450e3674453feb65)
+        ;
+
+        
+    
+    
+                marker_9a5fce5778a130120e8e0c2aaf47718f.setIcon(icon_5f5368b6852d4154e666df7777505bc2);
+            
+    
+            var marker_41ebf06990577b03790ea9e917f37969 = L.marker(
+                [11.5068924, 79.3435392],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_75210b6a234afcf7615c8bf7efdbec60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd385371b2f71215c35854887cac805f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a15cd120fe0e0d644bca7bc32f9548df = $(`<div id="html_a15cd120fe0e0d644bca7bc32f9548df" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>HOSPITAL → nan<br>SCHOOL → KSR Hi-Tech Senior Secondary School<br>SCHOOL → Jayapriya Vidyalaya Senior Secondary School<br>SCHOOL → nan<br>HOSPITAL → V.R.K. Hospital</div>`)[0];
+                popup_bd385371b2f71215c35854887cac805f.setContent(html_a15cd120fe0e0d644bca7bc32f9548df);
+            
+        
+
+        marker_41ebf06990577b03790ea9e917f37969.bindPopup(popup_bd385371b2f71215c35854887cac805f)
+        ;
+
+        
+    
+    
+                marker_41ebf06990577b03790ea9e917f37969.setIcon(icon_75210b6a234afcf7615c8bf7efdbec60);
+            
+    
+            var marker_f5a15ddec11a9cd07e409c4470871a8e = L.marker(
+                [11.5170147, 79.3238067],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_dba660ab3228254c1ca9055c10d7a15b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31f535bbfafd4aef3a982e9611aa6c1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84a2aca92b5f69a0c09db48540df8f3d = $(`<div id="html_84a2aca92b5f69a0c09db48540df8f3d" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>HOSPITAL → Deivam Hospital<br>CLINIC → Srinithi Nursing Home<br>CLINIC → Chandra Nursing Home<br>CLINIC → Senthil Nursing Home<br>HOSPITAL → Government Hospital, Virudhachalam</div>`)[0];
+                popup_31f535bbfafd4aef3a982e9611aa6c1e.setContent(html_84a2aca92b5f69a0c09db48540df8f3d);
+            
+        
+
+        marker_f5a15ddec11a9cd07e409c4470871a8e.bindPopup(popup_31f535bbfafd4aef3a982e9611aa6c1e)
+        ;
+
+        
+    
+    
+                marker_f5a15ddec11a9cd07e409c4470871a8e.setIcon(icon_dba660ab3228254c1ca9055c10d7a15b);
+            
+    
+            var marker_1349327b9ce301e200436ecbfb8f630c = L.marker(
+                [11.5220821, 79.2942302],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_e7b093a082b01b1988af7577b3a9cf28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec35bd3a6f37aacbe247af14a3b5a77c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1b3dc598354f88127947160b9368fa6 = $(`<div id="html_a1b3dc598354f88127947160b9368fa6" style="width: 100.0%; height: 100.0%;">Normal speed (50–60 km/h)</div>`)[0];
+                popup_ec35bd3a6f37aacbe247af14a3b5a77c.setContent(html_a1b3dc598354f88127947160b9368fa6);
+            
+        
+
+        marker_1349327b9ce301e200436ecbfb8f630c.bindPopup(popup_ec35bd3a6f37aacbe247af14a3b5a77c)
+        ;
+
+        
+    
+    
+                marker_1349327b9ce301e200436ecbfb8f630c.setIcon(icon_e7b093a082b01b1988af7577b3a9cf28);
+            
+    
+            var marker_d28dec2dcf1e8694dd21c5a80ba5153e = L.marker(
+                [11.511279, 79.3213373],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_de62a9fad35f55457534049b67217568 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ad775cddcce5ab753cad5083c07d2e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3be9effe9a77e976a9691c875019c09c = $(`<div id="html_3be9effe9a77e976a9691c875019c09c" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>HOSPITAL → Deivam Hospital<br>CLINIC → Srinithi Nursing Home<br>CLINIC → Chandra Nursing Home<br>CLINIC → Senthil Nursing Home<br>HOSPITAL → Government Hospital, Virudhachalam</div>`)[0];
+                popup_0ad775cddcce5ab753cad5083c07d2e8.setContent(html_3be9effe9a77e976a9691c875019c09c);
+            
+        
+
+        marker_d28dec2dcf1e8694dd21c5a80ba5153e.bindPopup(popup_0ad775cddcce5ab753cad5083c07d2e8)
+        ;
+
+        
+    
+    
+                marker_d28dec2dcf1e8694dd21c5a80ba5153e.setIcon(icon_de62a9fad35f55457534049b67217568);
+            
+    
+            var marker_c96a675a034e95366cf07f12f3710bf3 = L.marker(
+                [11.5232824, 79.3062695],
+                {
+}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var icon_f9de9fcaaf5d686d21e2751ea0f2f9c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd1fd24589c069cf05bc97ae72d45b56 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3776d971aae24e7d0398162b839ed21b = $(`<div id="html_3776d971aae24e7d0398162b839ed21b" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>CLINIC → Srinithi Nursing Home<br>CLINIC → Chandra Nursing Home<br>CLINIC → Senthil Nursing Home<br>HOSPITAL → Government Hospital, Virudhachalam<br>CLINIC → A.M.C. Poly Clinic</div>`)[0];
+                popup_fd1fd24589c069cf05bc97ae72d45b56.setContent(html_3776d971aae24e7d0398162b839ed21b);
+            
+        
+
+        marker_c96a675a034e95366cf07f12f3710bf3.bindPopup(popup_fd1fd24589c069cf05bc97ae72d45b56)
+        ;
+
+        
+    
+    
+                marker_c96a675a034e95366cf07f12f3710bf3.setIcon(icon_f9de9fcaaf5d686d21e2751ea0f2f9c6);
+            
+    
+            var poly_line_672de22588843916a5dfa31e7d9b35aa = L.polyline(
+                [[11.5183, 79.3256], [11.5068924, 79.3435392]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var poly_line_37b9f40ac3d9a6fc1ac29c462422d962 = L.polyline(
+                [[11.5068924, 79.3435392], [11.5170147, 79.3238067]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var poly_line_3fd5df45e3761a9d5e75db7781495bc8 = L.polyline(
+                [[11.5170147, 79.3238067], [11.5220821, 79.2942302]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var poly_line_e2a666ec1de278ebcfe50f37be5b1a54 = L.polyline(
+                [[11.5220821, 79.2942302], [11.511279, 79.3213373]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+    
+            var poly_line_fe6dbdc7b0fcd59b24686bd3a3c27ac0 = L.polyline(
+                [[11.511279, 79.3213373], [11.5232824, 79.3062695]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a5feb911494ec33498f352369f523a25);
+        
+</script>
+</html>

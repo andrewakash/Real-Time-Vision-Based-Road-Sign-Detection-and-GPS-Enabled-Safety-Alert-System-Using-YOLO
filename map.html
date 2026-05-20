@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a834ba54adc4a37e8c6b3c26cd97b168 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a834ba54adc4a37e8c6b3c26cd97b168" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a834ba54adc4a37e8c6b3c26cd97b168 = L.map(
+                "map_a834ba54adc4a37e8c6b3c26cd97b168",
+                {
+                    center: [10.7905, 78.7047],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ec9743724b17e7607297387fe0089c7d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ec9743724b17e7607297387fe0089c7d.addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var marker_fd55781052efd34495dadfce19d984da = L.marker(
+                [10.7905, 78.7047],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_f70ab4b97c14ca14986da9b9c206547e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c86d6982807facfeaa2b66fa909c0bd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02138d9877e21b2b109dc6fe03753c2f = $(`<div id="html_02138d9877e21b2b109dc6fe03753c2f" style="width: 100.0%; height: 100.0%;">🚗 Vehicle Location</div>`)[0];
+                popup_c86d6982807facfeaa2b66fa909c0bd5.setContent(html_02138d9877e21b2b109dc6fe03753c2f);
+            
+        
+
+        marker_fd55781052efd34495dadfce19d984da.bindPopup(popup_c86d6982807facfeaa2b66fa909c0bd5)
+        ;
+
+        
+    
+    
+                marker_fd55781052efd34495dadfce19d984da.setIcon(icon_f70ab4b97c14ca14986da9b9c206547e);
+            
+    
+            var marker_2e82b0ef851b562c7bb824be650fdcce = L.marker(
+                [10.7905, 78.7047],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_884fea999977b506c07876aa37339cf3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70e1df74063df80df3b2accddc0d79a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_600ca726e22d2a78c9f61e4b95d506c1 = $(`<div id="html_600ca726e22d2a78c9f61e4b95d506c1" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>HOSPITAL → Apollo Speciality Hospitals<br>SCHOOL → Samithi Higher Secondary School<br>SCHOOL → st.joseph's girls' hr.sec.school<br>SCHOOL → st.joseph's nursery &primary school<br>HOSPITAL → Joseph Eye Hospital (Institute Of Ophthalmology)</div>`)[0];
+                popup_70e1df74063df80df3b2accddc0d79a6.setContent(html_600ca726e22d2a78c9f61e4b95d506c1);
+            
+        
+
+        marker_2e82b0ef851b562c7bb824be650fdcce.bindPopup(popup_70e1df74063df80df3b2accddc0d79a6)
+        ;
+
+        
+    
+    
+                marker_2e82b0ef851b562c7bb824be650fdcce.setIcon(icon_884fea999977b506c07876aa37339cf3);
+            
+    
+            var marker_4b92ef74d8daacd327761fcefce5aa3a = L.marker(
+                [10.8161316, 78.6991834],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_867285792f9a4a2ddc8c8754ce6eb11c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06c0117c28831c5378decb13d1306935 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6534bc2bd2e7b15a20808b7031178c9a = $(`<div id="html_6534bc2bd2e7b15a20808b7031178c9a" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>SCHOOL → Mahatma Gandhi Centinary Vidayalaya<br>SCHOOL → Rajaji Vidyalaya<br>SCHOOL → Holy Cross Girls Higher Secondary School<br>HOSPITAL → Assured Best Care Hospital (P) Ltd., ( Abc Hospital)<br>HOSPITAL → Frontline Hospital and Research Institute</div>`)[0];
+                popup_06c0117c28831c5378decb13d1306935.setContent(html_6534bc2bd2e7b15a20808b7031178c9a);
+            
+        
+
+        marker_4b92ef74d8daacd327761fcefce5aa3a.bindPopup(popup_06c0117c28831c5378decb13d1306935)
+        ;
+
+        
+    
+    
+                marker_4b92ef74d8daacd327761fcefce5aa3a.setIcon(icon_867285792f9a4a2ddc8c8754ce6eb11c);
+            
+    
+            var marker_91bfaed4c93fd2829ee87723e45487e8 = L.marker(
+                [10.8196188, 78.6885431],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_4021a5e37297d52250e97dcc7eafd07b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_277bff66c1ecadbfb5ef54e9dd4d2a4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_750932439d106a32b3ff5339548483d2 = $(`<div id="html_750932439d106a32b3ff5339548483d2" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>SCHOOL → Mahatma Gandhi Centinary Vidayalaya<br>SCHOOL → Rajaji Vidyalaya<br>SCHOOL → Holy Cross Girls Higher Secondary School<br>HOSPITAL → Assured Best Care Hospital (P) Ltd., ( Abc Hospital)<br>HOSPITAL → Frontline Hospital and Research Institute</div>`)[0];
+                popup_277bff66c1ecadbfb5ef54e9dd4d2a4e.setContent(html_750932439d106a32b3ff5339548483d2);
+            
+        
+
+        marker_91bfaed4c93fd2829ee87723e45487e8.bindPopup(popup_277bff66c1ecadbfb5ef54e9dd4d2a4e)
+        ;
+
+        
+    
+    
+                marker_91bfaed4c93fd2829ee87723e45487e8.setIcon(icon_4021a5e37297d52250e97dcc7eafd07b);
+            
+    
+            var marker_26a76c6cbe2a117e99921d21e1f68324 = L.marker(
+                [10.8026533, 78.679615],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_0c7765ebfc49a8f5830190b83ed8726e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_066d23c66c735b61cb4ce226b6c6e72e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_af755c11f636d2c39cc5a897c934156c = $(`<div id="html_af755c11f636d2c39cc5a897c934156c" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>SCHOOL → Mahatma Gandhi Centinary Vidayalaya<br>SCHOOL → Rajaji Vidyalaya<br>SCHOOL → Saraswathi Bala Mandir School<br>HOSPITAL → Maruti Hospital<br>SCHOOL → K.A.P. Viswanatham Government Medical College</div>`)[0];
+                popup_066d23c66c735b61cb4ce226b6c6e72e.setContent(html_af755c11f636d2c39cc5a897c934156c);
+            
+        
+
+        marker_26a76c6cbe2a117e99921d21e1f68324.bindPopup(popup_066d23c66c735b61cb4ce226b6c6e72e)
+        ;
+
+        
+    
+    
+                marker_26a76c6cbe2a117e99921d21e1f68324.setIcon(icon_0c7765ebfc49a8f5830190b83ed8726e);
+            
+    
+            var marker_367c0038245c65399d99e962c5218133 = L.marker(
+                [10.8181382, 78.6886559],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_9c725eb75e87c0d539e341a33de6b4f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85d8336aedbb418d55ce60668be10b84 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e3e6c38207b045db9a52bb0ebba5a10 = $(`<div id="html_5e3e6c38207b045db9a52bb0ebba5a10" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>SCHOOL → Mahatma Gandhi Centinary Vidayalaya<br>SCHOOL → Rajaji Vidyalaya<br>SCHOOL → Holy Cross Girls Higher Secondary School<br>HOSPITAL → Assured Best Care Hospital (P) Ltd., ( Abc Hospital)<br>HOSPITAL → Frontline Hospital and Research Institute</div>`)[0];
+                popup_85d8336aedbb418d55ce60668be10b84.setContent(html_5e3e6c38207b045db9a52bb0ebba5a10);
+            
+        
+
+        marker_367c0038245c65399d99e962c5218133.bindPopup(popup_85d8336aedbb418d55ce60668be10b84)
+        ;
+
+        
+    
+    
+                marker_367c0038245c65399d99e962c5218133.setIcon(icon_9c725eb75e87c0d539e341a33de6b4f5);
+            
+    
+            var marker_cc99b888465730bc44083977fcc3d14c = L.marker(
+                [10.7987839, 78.6814963],
+                {
+}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var icon_12c47debe784f4774f7159bcd855753d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f95abba66ad03192b8fa6b80585bbd60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00e6604b196136528c67afeb01bc4134 = $(`<div id="html_00e6604b196136528c67afeb01bc4134" style="width: 100.0%; height: 100.0%;">⚠ Slow down (30 km/h)<br>SCHOOL → Saraswathi Bala Mandir School<br>HOSPITAL → Maruti Hospital<br>SCHOOL → K.A.P. Viswanatham Government Medical College<br>SCHOOL → Samithi Higher Secondary School<br>HOSPITAL → Joseph Eye Hospital (Institute Of Ophthalmology)</div>`)[0];
+                popup_f95abba66ad03192b8fa6b80585bbd60.setContent(html_00e6604b196136528c67afeb01bc4134);
+            
+        
+
+        marker_cc99b888465730bc44083977fcc3d14c.bindPopup(popup_f95abba66ad03192b8fa6b80585bbd60)
+        ;
+
+        
+    
+    
+                marker_cc99b888465730bc44083977fcc3d14c.setIcon(icon_12c47debe784f4774f7159bcd855753d);
+            
+    
+            var poly_line_cd8b99f3f0c9487e850142c84f3bc1c7 = L.polyline(
+                [[10.7905, 78.7047], [10.8161316, 78.6991834]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var poly_line_0eee072584b5c275e6e208640675f109 = L.polyline(
+                [[10.8161316, 78.6991834], [10.8196188, 78.6885431]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var poly_line_a8b53fd99e1a38f137d2a8dc6ca1a1e7 = L.polyline(
+                [[10.8196188, 78.6885431], [10.8026533, 78.679615]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var poly_line_f06aafb014c3772c267cdf8881b44b8f = L.polyline(
+                [[10.8026533, 78.679615], [10.8181382, 78.6886559]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+    
+            var poly_line_160579f837c7f173f2b14e571c5b8ff8 = L.polyline(
+                [[10.8181382, 78.6886559], [10.7987839, 78.6814963]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_a834ba54adc4a37e8c6b3c26cd97b168);
+        
+</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GPS Sender</title>
+</head>
+
+<body style="background:black;color:white;text-align:center;padding-top:100px;font-family:Arial;">
+
+<h1>🚗 SmartDrive GPS</h1>
+
+<button onclick="startGPS()"
+style="padding:20px;font-size:25px;background:lime;border:none;border-radius:10px;">
+
+START GPS
+
+</button>
+
+<h2 id="status">
+Waiting...
+</h2>
+
+<script>
+
+function startGPS(){
+
+    if(navigator.geolocation){
+
+        navigator.geolocation.watchPosition(
+
+            function(position){
+
+                let lat = position.coords.latitude
+                let lon = position.coords.longitude
+
+                document.getElementById("status").innerHTML =
+                    "📍 " + lat + "," + lon
+
+                fetch(
+                    `/gps?lat=${lat}&lon=${lon}`
+                )
+
+            },
+
+            function(error){
+
+                alert(error.message)
+
+            },
+
+            {
+                enableHighAccuracy:true
+            }
+        )
+
+    }else{
+
+        alert("Geolocation not supported")
+    }
+}
+
+</script>
+
+</body>
+</html>
