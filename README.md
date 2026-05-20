@@ -185,3 +185,9 @@ If you like this project:
 # 📜 License
 
 This project is developed for academic and educational purposes.
+## 📸 Output Screenshots
+
+### 🚦 Traffic Sign Detection
+
+![Detection](detection.png)
+
