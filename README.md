@@ -1,5 +1,9 @@
 <h1 align="center">🚦 Real-Time Vision-Based Road Sign Detection and GPS-Enabled Safety Alert System using YOLO</h1>
 
+<!-- <p align="center">
+  <img src="Dashboard.png" width="100%">
+</p> -->
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python">
   <img src="https://img.shields.io/badge/YOLO-AI-red?style=for-the-badge">
@@ -10,7 +14,7 @@
 
 ---
 
-## 📌 Project Description
+# 📌 Project Description
 
 An advanced AI-powered intelligent transportation safety system that performs:
 
@@ -81,19 +85,6 @@ Web Dashboard + Alerts
 
 ---
 
-# 📸 Output Screenshots
-
-## 🔹 Live Detection
-(Add screenshot here)
-
-## 🔹 GPS Dashboard
-(Add screenshot here)
-
-## 🔹 Map Visualization
-(Add screenshot here)
-
----
-
 # 🚀 Key Features
 
 ✨ Real-time object detection  
@@ -125,22 +116,76 @@ README.md
 
 # ⚙️ Installation
 
-## Clone Repository
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/andrewakash/Real-Time-Vision-Based-Road-Sign-Detection-and-GPS-Enabled-Safety-Alert-System-Using-YOLO.git
 ```
 
-## Install Requirements
+---
+
+## 2️⃣ Navigate to Project Folder
+
+```bash
+cd Real-Time-Vision-Based-Road-Sign-Detection-and-GPS-Enabled-Safety-Alert-System-Using-YOLO
+```
+
+---
+
+## 3️⃣ Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+---
+
+## 4️⃣ Activate Environment
+
+### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+## 5️⃣ Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Run Project
+---
+
+# ▶️ Run the Project
+
+## Start Flask Server
 
 ```bash
 python gps_server.py
+```
+
+---
+
+## Start YOLO Detection
+
+```bash
+python detect_web.py
+```
+
+---
+
+## Start Ngrok (Optional)
+
+```bash
+python start_ngrok.py
 ```
 
 ---
@@ -153,22 +198,52 @@ http://127.0.0.1:5000
 
 ---
 
+# 📸 Output Screenshots
+
+## 🚦 Traffic Sign Detection
+
+<p align="center">
+  <img src="detection.png" width="90%">
+</p>
+
+---
+
+## 🛰️ Web Dashboard
+
+<p align="center">
+  <img src="Dashboardd.png" width="90%">
+</p>
+
+---
+
 # 🔮 Future Enhancements
 
 - Android mobile integration
 - Voice alert assistant
-- Cloud database
+- Cloud database support
 - Emergency SOS system
 - AI accident prediction
-- Real-time analytics
+- Real-time analytics dashboard
+- Smart city traffic integration
 
 ---
 
 # 👨‍💻 Developer
 
 ## Akash S
-🎓 CSE Student  
-🏫 SRM TRP Engineering College
+
+🎓 Computer Science and Engineering  
+🏫 SRM TRP Engineering College  
+
+---
+
+# 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/andrewakash/Real-Time-Vision-Based-Road-Sign-Detection-and-GPS-Enabled-Safety-Alert-System-Using-YOLO?style=social">
+  
+  <img src="https://img.shields.io/github/forks/andrewakash/Real-Time-Vision-Based-Road-Sign-Detection-and-GPS-Enabled-Safety-Alert-System-Using-YOLO?style=social">
+</p>
 
 ---
 
@@ -185,9 +260,3 @@ If you like this project:
 # 📜 License
 
 This project is developed for academic and educational purposes.
-## 📸 Output Screenshots
-
-### 🚦 Traffic Sign Detection
-
-![Detection](detection.png)
-
